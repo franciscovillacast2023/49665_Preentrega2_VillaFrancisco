@@ -32,12 +32,8 @@ let entero = 0
 function esEntero(numero){
   if (numero * 1 === numero) {
       entero = 1
-      alert(`el numero es entero ${numero}.`)
-      // console.log("el número es entero");
   } else {
       entero = 0
-      alert(`el numero no es entero ${numero}.`)
-      // console.log("el número no es entero");
   }
 }
 
@@ -90,7 +86,6 @@ function seleccionarProductos() {
         )
       );
       esEntero(seleccionProducto1)
-      alert(`el valor de entero es: ${entero} / La seleccion es: ${seleccionProducto1}. / El largo es es: ${productos.length}.`);
       break;
       }
     }
@@ -183,19 +178,6 @@ function comprarProductos() {
           }
         }
       });
-
-      /*alert(
-        `${clienteNombre} + "Su compra ha sido realizada. Recuerde retirar en" + ${tiendaProducto}!`
-      );
-      let mensajeAlert = "Su compra ha sido realizada. Recuerde retirar sus productos en las siguientes tiendas:\n\n";
-
-      carroCompras.forEach(producto => {
-          mensajeAlert += `Producto: ${producto.producto}\n`;
-          mensajeAlert += `Tienda: ${producto.nombreTienda}\n`;
-          mensajeAlert += `------------------------\n`;
-      });
-
-      alert(mensajeAlert);*/
 
       const productosAgrupados = {};
 
